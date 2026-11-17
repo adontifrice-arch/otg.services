@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Demander un devis — GED, intégration, IBM FileNet, application métier | Off The Grid</title>
+<meta name="description" content="Demandez un devis à Off The Grid pour une GED, une intégration à votre référentiel existant, une plateforme IBM FileNet ou CP4BA, ou une application métier. Chaque projet est chiffré d'après votre périmètre.">
+<meta property="og:title" content="Demander un devis à Off The Grid">
+<meta property="og:description" content="Pas de formule : chaque projet est chiffré d'après vos documents, vos règles et votre infrastructure.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0e5f68">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Instrument+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<a class="skip" href="#contenu">Aller au contenu</a>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="lock" href="index.html" aria-label="Off The Grid, accueil">
+      <img src="assets/mark.svg" alt="" width="34" height="34">
+      <b>OFF<i>the</i>GRID</b>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav class="nav" id="nav" aria-label="Navigation principale">
+      <a href="ged.html">GED</a>
+      <a href="integrations.html">Intégrations</a>
+      <a href="ibm-filenet.html">IBM FileNet &amp; CP4BA</a>
+      <a href="applications.html">Applications métier</a>
+      <a href="ia-souveraine.html">IA souveraine</a>
+      <a class="btn btn-primary" href="devis.html" aria-current="page">Demander un devis</a>
+    </nav>
+  </div>
+</header>
+
+<main id="contenu">
+
+  <div class="hero plain">
+    <div class="wrap">
+      <p class="kicker">Devis</p>
+      <h1>Décrivez votre projet. <em>Nous le chiffrons.</em></h1>
+      <p class="lede">Nous ne vendons pas de formule. Chaque devis part de vos documents, de vos règles et de votre infrastructure, et fixe par écrit le périmètre, le délai et le prix.</p>
+    </div>
+  </div>
+
+  <section class="block" style="padding-top:8px">
+    <div class="wrap form-grid">
+
+      <form class="quote">
+        <fieldset>
+          <legend>Votre demande concerne</legend>
+          <div class="choices">
+            <label class="choice"><input type="radio" name="sujet" value="GED (OTG Documents)" data-key="ged" checked> Une GED</label>
+            <label class="choice"><input type="radio" name="sujet" value="Intégration à une GED existante" data-key="integration"> Une intégration à ma GED</label>
+            <label class="choice"><input type="radio" name="sujet" value="IBM FileNet / CP4BA" data-key="ibm"> IBM FileNet ou CP4BA</label>
+            <label class="choice"><input type="radio" name="sujet" value="Application métier" data-key="application"> Une application métier</label>
+            <label class="choice"><input type="radio" name="sujet" value="IA souveraine" data-key="ia"> Une IA souveraine</label>
+            <label class="choice"><input type="radio" name="sujet" value="Autre" data-key="autre"> Autre chose</label>
+          </div>
+        </fieldset>
+
+        <div class="field-row">
+          <div class="field">
+            <label for="nom">Nom</label>
+            <input type="text" id="nom" name="nom" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="organisation">Organisation</label>
+            <input type="text" id="organisation" name="organisation" autocomplete="organization" required>
+          </div>
+        </div>
+
+        <div class="field-row">
+          <div class="field">
+            <label for="email">E-mail professionnel</label>
+            <input type="email" id="email" name="email" autocomplete="email" required>
+          </div>
+          <div class="field">
+            <label for="telephone">Téléphone <small>(facultatif)</small></label>
+            <input type="tel" id="telephone" name="telephone" autocomplete="tel">
+          </div>
+        </div>
+
+        <div class="field-row">
+          <div class="field">
+            <label for="ged">GED en place</label>
+            <select id="ged" name="ged">
+              <option>Aucune pour l'instant</option>
+              <option>IBM FileNet / CP4BA</option>
+              <option>Microsoft SharePoint</option>
+              <option>Alfresco</option>
+              <option>Nuxeo</option>
+              <option>OpenText (Documentum, Content Management)</option>
+              <option>M-Files</option>
+              <option>DocuWare</option>
+              <option>Autre GED</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="hebergement">Hébergement visé</label>
+            <select id="hebergement" name="hebergement">
+              <option>Sur site</option>
+              <option>Cloud privé</option>
+              <option>À définir</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="contexte">Votre besoin</label>
+          <textarea id="contexte" name="contexte" required placeholder="Types de documents, volumes, outils en place, ce que vous voulez obtenir."></textarea>
+        </div>
+
+        <div class="form-foot">
+          <button class="btn btn-primary" type="submit">Préparer ma demande</button>
+          <p>Le bouton ouvre votre messagerie avec la demande déjà rédigée. Rien n'est transmis à un service tiers.</p>
+        </div>
+        <p class="form-msg" role="status" hidden>Votre messagerie s'ouvre avec la demande. Il reste à l'envoyer.</p>
+      </form>
+
+      <div>
+        <div class="contact-card">
+          <h3>Écrire directement</h3>
+          <p>Hichem Boudaya, directeur technique<br><a href="mailto:hichem.boudaya@goldshard.fr">hichem.boudaya@goldshard.fr</a></p>
+          <p>Yassmine Tlili, directrice générale<br><a href="mailto:yassmine.tlili@goldshard.fr">yassmine.tlili@goldshard.fr</a></p>
+        </div>
+        <div class="contact-card">
+          <h3>Ce qui se passe ensuite</h3>
+          <ul class="list-plain">
+            <li><strong>Échange.</strong> Nous revenons vers vous pour préciser le besoin.</li>
+            <li><strong>Cadrage.</strong> Sources documentaires, règles de classement, infrastructure d'accueil.</li>
+            <li><strong>Devis.</strong> Un document écrit : périmètre, délai, prix.</li>
+          </ul>
+        </div>
+        <div class="contact-card">
+          <h3>Ce qui aide à chiffrer</h3>
+          <p>Le nombre approximatif de documents par mois, les types de pièces les plus fréquents, la GED ou le logiciel déjà en place, et le nombre d'utilisateurs.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="lock" href="index.html" aria-label="Off The Grid, accueil">
+          <img src="assets/mark.svg" alt="" width="34" height="34">
+          <b>OFF<i>the</i>GRID</b>
+        </a>
+        <p style="margin:14px 0 0;max-width:38ch">Applications de GED et applications métier, sur des modèles d'IA installés chez vous.</p>
+        <p class="house">Une plateforme Gold Shard International</p>
+      </div>
+      <div>
+        <h4>Offre</h4>
+        <ul>
+          <li><a href="ged.html">OTG Documents</a></li>
+          <li><a href="integrations.html">Intégrations GED</a></li>
+          <li><a href="ibm-filenet.html">IBM FileNet &amp; CP4BA</a></li>
+          <li><a href="applications.html">Applications métier</a></li>
+          <li><a href="ia-souveraine.html">IA souveraine</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="devis.html">Demander un devis</a></li>
+          <li><a href="mailto:hichem.boudaya@goldshard.fr">hichem.boudaya@goldshard.fr</a></li>
+          <li><a href="mailto:yassmine.tlili@goldshard.fr">yassmine.tlili@goldshard.fr</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="legal">Les noms de produits cités, dont IBM FileNet, IBM Cloud Pak, Microsoft SharePoint, Alfresco, Nuxeo, OpenText, M-Files et DocuWare, sont des marques de leurs éditeurs respectifs.</p>
+  </div>
+</footer>
+
+<script src="assets/site.js" type="module"></script>
+</body>
+</html>

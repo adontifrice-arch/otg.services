@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OTG Documents — GED avec lecture et classement automatiques | Off The Grid</title>
+<meta name="description" content="OTG Documents est une GED qui lit, classe et fait valider les pièces : OCR français et arabe, 72 types de documents, validation humaine, génération d'actes. Installée chez vous, sur devis.">
+<meta property="og:title" content="OTG Documents — la GED qui lit, classe et fait valider">
+<meta property="og:description" content="Du scan au dossier, sans ressaisie. Modèles d'IA installés dans votre infrastructure.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0e5f68">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Instrument+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<a class="skip" href="#contenu">Aller au contenu</a>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="lock" href="index.html" aria-label="Off The Grid, accueil">
+      <img src="assets/mark.svg" alt="" width="34" height="34">
+      <b>OFF<i>the</i>GRID</b>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav class="nav" id="nav" aria-label="Navigation principale">
+      <a href="ged.html" aria-current="page">GED</a>
+      <a href="integrations.html">Intégrations</a>
+      <a href="ibm-filenet.html">IBM FileNet &amp; CP4BA</a>
+      <a href="applications.html">Applications métier</a>
+      <a href="ia-souveraine.html">IA souveraine</a>
+      <a class="btn btn-primary" href="devis.html">Demander un devis</a>
+    </nav>
+  </div>
+</header>
+
+<main id="contenu">
+
+  <div class="hero plain">
+    <div class="wrap">
+      <p class="kicker">OTG Documents · Gestion électronique de documents</p>
+      <h1>Du scan au dossier, <em>sans ressaisie.</em></h1>
+      <p class="lede">OTG Documents reçoit les pièces, les lit, propose leur classement et prépare les documents à produire. L'application est conçue avec un cabinet d'expertise comptable. Son référentiel de types et de modèles s'administre, ce qui l'ouvre à d'autres métiers du document.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="devis.html?sujet=ged">Demander un devis</a>
+        <a class="btn btn-ghost" href="integrations.html">Brancher une GED existante</a>
+      </div>
+    </div>
+  </div>
+
+  <section class="block">
+    <div class="wrap">
+      <div class="panel">
+        <p class="kicker">01 · Le parcours d'une pièce</p>
+        <h2>Quatre étapes, <em>de la réception au document produit.</em></h2>
+        <div class="chain">
+          <div><b>01 Lire</b><span>OCR en français et en arabe. PDF natifs. Métadonnées du fichier.</span></div>
+          <div><b>02 Reconnaître</b><span>Type de pièce, client, exercice, champs utiles. 72 types répartis en 8 familles.</span></div>
+          <div><b>03 Valider</b><span>Classement automatique dès 0,90 de confiance. File de validation en dessous.</span></div>
+          <div><b>04 Produire</b><span>57 modèles d'actes et de courriers. Les valeurs viennent du dossier, jamais du modèle.</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <div class="block-head">
+        <div>
+          <p class="kicker">02 · Seuils de confiance</p>
+          <h2>La machine propose. Sous le seuil, une personne décide.</h2>
+        </div>
+        <p>Chaque pièce reçoit un indice de confiance entre 0 et 1. Il détermine ce qui se passe ensuite, et les corrections servent à améliorer les propositions suivantes.</p>
+      </div>
+      <div class="states">
+        <div class="st ok">
+          <span class="range">Confiance ≥ 0,90</span>
+          <h3>Classé</h3>
+          <p>La pièce rejoint le dossier sans intervention.</p>
+        </div>
+        <div class="st review">
+          <span class="range">De 0,60 à 0,89</span>
+          <h3>À revoir</h3>
+          <p>Un collaborateur confirme ou corrige la proposition.</p>
+        </div>
+        <div class="st manual">
+          <span class="range">Confiance &lt; 0,60</span>
+          <h3>Manuel</h3>
+          <p>La pièce est classée à la main.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <div class="block-head">
+        <div>
+          <p class="kicker">03 · Périmètre fonctionnel</p>
+          <h2>Ce que couvre l'application.</h2>
+        </div>
+        <p>Treize modules. Le socle est livré en premier. Les modules marqués « phase 2 » viennent ensuite.</p>
+      </div>
+      <div class="modules">
+        <div class="module"><span class="n">01</span><div><h3>Clients et dossiers</h3><p>Connaître chaque client, sa forme et son exercice, pour y rattacher les documents.</p></div></div>
+        <div class="module"><span class="n">02</span><div><h3>Collecte</h3><p>Messagerie, dossier local, partage réseau, scanner. Sans perte ni doublon.</p></div></div>
+        <div class="module"><span class="n">03</span><div><h3>Lecture et reconnaissance</h3><p>Lire le contenu, identifier le type, le client, l'exercice et les champs.</p></div></div>
+        <div class="module"><span class="n">04</span><div><h3>Validation humaine</h3><p>Soumettre les cas douteux et apprendre des corrections.</p></div></div>
+        <div class="module"><span class="n">05</span><div><h3>Classement et versions</h3><p>Ranger, nommer, versionner, archiver. Conservation dix ans.</p></div></div>
+        <div class="module"><span class="n">06</span><div><h3>Recherche et consultation</h3><p>Retrouver et afficher une pièce en quelques secondes.</p></div></div>
+        <div class="module"><span class="n">07</span><div><h3>Échéancier et alertes</h3><p>Suivre les obligations légales de chaque client.</p></div></div>
+        <div class="module"><span class="n">08</span><div><h3>Référentiel documentaire</h3><p>Faire vivre les types, les mots-clés et les délais.</p></div></div>
+        <div class="module"><span class="n">09</span><div><h3>Portail client <span class="tag later">Phase 2</span></h3><p>Dépôt et consultation par le client.</p></div></div>
+        <div class="module"><span class="n">10</span><div><h3>Sécurité et audit</h3><p>Utilisateurs, droits, journal des actions, sauvegardes.</p></div></div>
+        <div class="module"><span class="n">11</span><div><h3>Tableau de bord <span class="tag later">Phase 2</span></h3><p>Activité, complétude des dossiers, qualité de la reconnaissance.</p></div></div>
+        <div class="module"><span class="n">12</span><div><h3>Intégrations et exports <span class="tag later">Phase 2</span></h3><p>Alimenter le logiciel comptable, exporter un dossier complet.</p></div></div>
+        <div class="module"><span class="n">13</span><div><h3>Génération de documents</h3><p>Procès-verbaux, statuts, actes, courriers et lettres, à partir des données du dossier.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <div class="block-head">
+        <div>
+          <p class="kicker">04 · Objectifs</p>
+          <h2>Ce que l'application doit atteindre.</h2>
+        </div>
+        <p>Ces chiffres sont les objectifs fixés par le cahier des charges. Ils sont mesurés pendant la recette et suivis ensuite.</p>
+      </div>
+      <div class="facts">
+        <div class="fact"><strong>70 %</strong><span>des pièces classées sans reprise au démarrage, puis 85 % à six mois.</span></div>
+        <div class="fact"><strong>95 %</strong><span>des identifiants fiscaux rattachés au bon client.</span></div>
+        <div class="fact"><strong>&lt; 30 s</strong><span>pour retrouver une pièce dans un dossier.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <div class="cards two">
+        <div class="card">
+          <span class="num">Ce que la GED ne fait pas</span>
+          <h3>Elle prépare, elle ne décide pas à votre place.</h3>
+          <p>OTG Documents alimente le logiciel comptable. Elle ne tient pas les écritures, ne télédéclare pas et ne signe pas à la place du dirigeant.</p>
+        </div>
+        <div class="card">
+          <span class="num">Vous avez déjà une GED</span>
+          <h3>La lecture et le classement s'ajoutent à l'existant.</h3>
+          <p>Sur IBM FileNet, SharePoint, Alfresco ou Nuxeo, les mêmes briques lisent les documents en place et écrivent leurs métadonnées dans votre référentiel.</p>
+          <p><a class="more" href="integrations.html">Voir les intégrations</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="band-wrap">
+    <div class="wrap">
+      <div class="band">
+        <div>
+          <h2>Un fonds documentaire à reprendre ? <em>Parlons-en.</em></h2>
+          <p>Indiquez vos types de pièces, vos volumes et vos sources. Le devis fixe le périmètre, le délai et le prix.</p>
+        </div>
+        <a class="btn btn-paper" href="devis.html?sujet=ged">Demander un devis</a>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="lock" href="index.html" aria-label="Off The Grid, accueil">
+          <img src="assets/mark.svg" alt="" width="34" height="34">
+          <b>OFF<i>the</i>GRID</b>
+        </a>
+        <p style="margin:14px 0 0;max-width:38ch">Applications de GED et applications métier, sur des modèles d'IA installés chez vous.</p>
+        <p class="house">Une plateforme Gold Shard International</p>
+      </div>
+      <div>
+        <h4>Offre</h4>
+        <ul>
+          <li><a href="ged.html">OTG Documents</a></li>
+          <li><a href="integrations.html">Intégrations GED</a></li>
+          <li><a href="ibm-filenet.html">IBM FileNet &amp; CP4BA</a></li>
+          <li><a href="applications.html">Applications métier</a></li>
+          <li><a href="ia-souveraine.html">IA souveraine</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="devis.html">Demander un devis</a></li>
+          <li><a href="mailto:hichem.boudaya@goldshard.fr">hichem.boudaya@goldshard.fr</a></li>
+          <li><a href="mailto:yassmine.tlili@goldshard.fr">yassmine.tlili@goldshard.fr</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="legal">Les noms de produits cités, dont IBM FileNet, IBM Cloud Pak, Microsoft SharePoint, Alfresco, Nuxeo, OpenText Documentum, M-Files et DocuWare, sont des marques de leurs éditeurs respectifs.</p>
+  </div>
+</footer>
+
+<script src="assets/site.js" type="module"></script>
+</body>
+</html>
