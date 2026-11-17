@@ -1,0 +1,15 @@
+{
+  "name": "otg-services",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Site public Off The Grid",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "build": "node -e \"console.log('Static site — nothing to build')\""
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

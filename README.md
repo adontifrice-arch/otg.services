@@ -4,11 +4,13 @@ Site public Off The Grid : GED, applications métier, IA souveraine, expertise I
 
 ## Aperçu local
 
-Ouvrir `index.html` dans un navigateur, ou servir le dossier :
+```
+npm start
+```
 
-```
-npx --yes serve .
-```
+Puis ouvrir http://127.0.0.1:8080/
+
+Sur GoDaddy (hébergement Node.js) : démarrage `npm start`, build `npm run build`.
 
 ## Contenu
 
